@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Vanilla JS Boilerplate</title>
+    <meta name="description" content="Vanilla JS Boilerplate">
+    <meta name="author" content="Tom Yancey">
+
+    <link rel="stylesheet" href="./css/styles.css?v=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <script src="./js/store.js"></script>
+    <script src="./js/index.js"></script>
+
+    <script>
+      function onSimpleExampleButton(){
+        var element = document.querySelector('#example-element');
+        element.innerHTML = '<h2>You clicked the button!</h2>';
+      }
+    </script>
+
+    <header>
+      <h1>JS Template</h1>
+      <button onclick="onSimpleExampleButton()">Simple Example</button>
+      <button onclick="buttonHandler('TEXT')">Text Example</button>
+      <button onclick="buttonHandler('HEADER')">Component Example</button>
+      <button onclick="buttonHandler('LIST')">List Example</button>
+    </header>
+    <main>
+      <div id="example-element" class="dynamic-element">
+        <p>This is an element that can be changed dynamically by clicking the buttons above</p>
+      </div>
+      <div class="hint-text">
+        Look for example code in js/index.js
+      </div>
+    </main>
+  </body>
+</html>
